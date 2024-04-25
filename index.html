@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Konversi Suhu</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <h1>Konversi Suhu</h1>
+    <h1 class="typed"></h1>
     <div class="container">
       <h4>
         Masukkan suhu derajat Celsius (&deg;C) ke kotak dibawah, lalu klik
@@ -18,7 +19,7 @@
       <br>
       <input type="number" id="celsius" required>
       <div class="btn">
-        <button type="submit">Konversi</button>
+        <button>Konversi</button>
         <button>Reset</button>
         <button>Reverse</button>
       </div>
@@ -31,15 +32,29 @@
       <input type="text" id="kalkulasi">
       <h3 style="margin: 18px 0;">Cara Konversi Dari Celsius (&deg;C) ke Fahrenheit (&deg;F)</h3>
       <hr>
-      <h4 style="margin: 18px 0;">suhu S dalam  derajat Fahrenheit (&deg;F) sama dengan suhu S dalam derajat Celsius (&deg;C) kali 9/5 tambah 32.</h4>
-      <br>
+      <h4 style="margin: 18px 0;">suhu <span style="font-style: italic;">S</span> dalam  derajat Fahrenheit (&deg;F) sama dengan suhu <span style="font-style: italic;">S</span> dalam derajat Celsius (&deg;C) kali 9/5 tambah 32.</h4>
       <h3>S <sub>(&deg;F)</sub> = (S <sub>(&deg;C)</sub> × 9/5) + 32</h3>
       <br>
       <h4>atau</h4>
       <h3>S <sub>(&deg;F)</sub> = (S <sub>(&deg;C)</sub> x 1.8) + 32</h3>
-
     </div>
+    <footer>Created with 💖 by Muhammad Ikhwan</footer>
 
+    <!-- script js -->
     <script src="js/script.js"></script>
+
+    <!-- typed.js script -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".typed", {
+        strings: ["Celsius to Fahrenheit ", "Fahrenheit to Celsius "],
+        typeSpeed: 40,
+        backSpeed: 30,
+        backDelay: 1000,
+        startDelay: 1000,
+        loop: true,
+        showCursor: true,
+      });
+    </script>
   </body>
 </html>
