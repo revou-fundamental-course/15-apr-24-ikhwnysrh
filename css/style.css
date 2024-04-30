@@ -111,7 +111,7 @@ button:hover {
 /*responsif button*/
 @media (max-width: 768px) {
     button {
-        width: 93px;
+        width: 90px;
     }
 }
 /*button styles end*/
